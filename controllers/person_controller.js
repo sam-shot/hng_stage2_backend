@@ -3,7 +3,9 @@ import person_model from "../model/person_model.js"
 export async function createPerson(req, res) {
     const { name } = req.body
     if (!name) return res.status(404).send({ "message": "Please provide a name" })
-
+    if (typeof name !== 'string' ) {
+        return res.status(400).send({ message: 'Name must be string' });
+      }
     const existingUser = await person_model.find({
         $or: [{ name }],
     }).catch((e) => {
