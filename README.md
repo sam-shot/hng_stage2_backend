@@ -11,10 +11,11 @@ A Simple REST API for Managing Persons
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
+- [Error Handling](#error-handling)
 - [API Endpoints](#api-endpoints)
+- [UML Diagram](#uml-diagram)
 - [Testing](#testing)
 - [Documentation](#documentation)
-- [Error Handling](#error-handling)
 ## Introduction
 
 This project is a simple REST API for managing persons. It allows you to perform basic CRUD (Create, Read, Update, Delete) operations on person resources. The API is built using Node.js and MongoDB, and it provides a flexible way to handle dynamic parameters, such as adding or retrieving a person by name.
@@ -102,6 +103,11 @@ Always check the response status code and the accompanying error message in the 
 - **PUT /api/:user_id:** Update details of an existing person by ID
 - **DELETE /api/:user_id:** Remove a person by ID
 
+## UML Diagram
+
+Below is a simplified UML diagram illustrating the structure of this project. This diagram provides an overview of the key components and their relationships.
+
+![UML Diagram](https://github.com/sam-shot/hng_stage2_backend/assets/75101172/4045cad7-ba28-4b74-bfaf-faec576fa1b2)
 
 ## Testing
 
