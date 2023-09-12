@@ -115,7 +115,7 @@ You can test the API using Postman or a testing script. Use the provided Postman
 
 ### Postman Collection
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/24711521-dd995c3e-7b46-4e8a-b9ae-af8206bdb7f4?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D24711521-dd995c3e-7b46-4e8a-b9ae-af8206bdb7f4%26entityType%3Dcollection%26workspaceId%3D52a7857f-1abd-4ef3-a021-89b2a2971902)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://www.postman.com/blue-spaceship-240143/workspace/hng-backend/collection/24711521-dd995c3e-7b46-4e8a-b9ae-af8206bdb7f4?action=share&creator=24711521)
 
 
 ### Running Tests
