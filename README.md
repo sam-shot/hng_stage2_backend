@@ -14,6 +14,7 @@ A Simple REST API for Managing Persons
 - [API Endpoints](#api-endpoints)
 - [Testing](#testing)
 - [Documentation](#documentation)
+- [Error Handling](#error-handling)
 ## Introduction
 
 This project is a simple REST API for managing persons. It allows you to perform basic CRUD (Create, Read, Update, Delete) operations on person resources. The API is built using Node.js and MongoDB, and it provides a flexible way to handle dynamic parameters, such as adding or retrieving a person by name.
@@ -77,6 +78,22 @@ npm start
 ```
 
 The API will be accessible at http://localhost:5000
+
+
+## Error Handling
+
+When using the API, you may encounter various error responses. Below are some common error scenarios and their corresponding HTTP status codes:
+
+- `400 Bad Request`: This status code is returned when the request is malformed or missing required parameters. Check your request payload and ensure it follows the API's expected format.
+
+- `404 Not Found`: When trying to access a resource that does not exist, the API responds with a 404 status code. Double-check the resource's ID or name provided in the request.
+
+- `409 Conflict`: If you attempt to create a resource that already exists, such as a person with the same name, the API will return a 409 status code. Ensure the resource is unique or consider updating the existing one.
+
+- `500 Internal Server Error`: In case of unexpected server errors, you might receive a 500 status code. If you encounter this, it's recommended to report the issue to me at [here](mailto:samshotmedia01@gmail.com).
+
+Always check the response status code and the accompanying error message in the JSON response body for more details on the specific error. The API aims to provide informative error messages to assist you in troubleshooting.
+
 
 ## API Endpoints
 
