@@ -3,11 +3,8 @@ import mongoose, { Mongoose } from "mongoose";
 const personSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: true
-    },
-    value: {
-        type: String,
-        required: true
+        required: true,
+        unique: true
     }
 })
 
